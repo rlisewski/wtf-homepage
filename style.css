@@ -1,0 +1,106 @@
+body {
+  background: #bfc3ba ;
+}
+
+.dairy {
+  clear: both;
+}
+
+.dairy_header {
+  color: #536271;
+}
+
+.dairy_paragraph {
+  color: #37323e;
+  padding: 10px 16px;
+}
+
+.dairy_event {
+  color: green;
+}
+
+.article_title {
+  color: #8c7051;
+}
+
+.about {
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+.about_header {
+  color: #1460aa;
+}
+
+.about_paragraph {
+  color: #37323e;
+  padding: 10px 16px;
+}
+
+.about_box{
+  width: 100px;
+  height: 100px;
+  background: yellowgreen;
+  border: 10px solid red;
+  margin: 10px;
+  box-sizing: border-box; /* definiuje stały rozmiar pudełka */
+  position: sticky;
+  top: 0;
+
+}
+
+.about_paragraph--js {}
+
+.about_img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+.article {
+
+}
+
+.article_paragraph {
+  color: #37323e;
+  padding: 10px 16px;
+}
+
+.main {
+  width: 100%;
+  max-width: 700px;
+  margin: 32px auto;
+ }
+
+.main_header {
+  color: #2f2235;
+  margin-bottom: 48px;
+}
+
+.top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 10px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.navigation_link {
+  color: #47682c;
+}
+
+.footer {
+  width: 100%;
+  max-width: 700px;
+  margin: 0px auto;
+}
