@@ -10,6 +10,9 @@ const about = document.querySelector('.about__paragraph--js');
 console.log(about.innerHTML);
 
 about.innerHTML = "Co tu sie wyczynia?";
+about.style.color = 'red';
+about.style.fontSize = '20px';
+about.style.backgroundColor = 'lightgreen';
 
 console.log(about.innerHTML);
 
