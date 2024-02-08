@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   background: #bfc3ba ;
 }
@@ -43,7 +51,6 @@ body {
   background: yellowgreen;
   border: 10px solid red;
   margin: 10px;
-  box-sizing: border-box; /* definiuje stały rozmiar pudełka */
   position: sticky;
   top: 0;
 
@@ -91,7 +98,6 @@ body {
   width: 100%;
   top: 0;
   left: 10px;
-  box-sizing: border-box;
   padding: 16px;
 }
 
