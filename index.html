@@ -2,93 +2,94 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rafał Lisewski - strona domowa</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="normalize.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header class="navigation">
-      <a class="navigation_link" href="index.html">Strona główna</a>
-      <a class="navigation_link" href="podstrona.html">Podstrona</a>
-      <a class="navigation_link" href="poniedzialek.html">Poniedziałek</a>
-      <a class="navigation_link" href="wtorek.html">Wtorek</a>
-      <a class="navigation_link" href="sroda.html">Środa</a>
-      <a class="navigation_link" href="czwartek.html">Czwartek</a>
-      <a class="navigation_link" href="piatek.html">Piątek</a>
-      <a class="navigation_link" href="sobota.html">Sobota</a>
-      <a class="navigation_link" href="niedziela.html">Niedziela</a>
-    </header>
-    <main class="main" id="top">
-      <header >
-        <h1 class="main_header">
+    <main class="main" >
+      <header>
+        <div class="navigation">
+          <a class="navigation__link" href="index.html">Strona główna</a>
+          <a class="navigation__link" href="podstrona.html">Podstrona</a>
+          <a class="navigation__link" href="poniedzialek.html">Poniedziałek</a>
+          <a class="navigation__link" href="wtorek.html">Wtorek</a>
+          <a class="navigation__link" href="sroda.html">Środa</a>
+          <a class="navigation__link" href="czwartek.html">Czwartek</a>
+          <a class="navigation__link" href="piatek.html">Piątek</a>
+          <a class="navigation__link" href="sobota.html">Sobota</a>
+          <a class="navigation__link" href="niedziela.html">Niedziela</a>
+        </div>
+        <h1 class="main__header" id="top">
           Rafał Lisewski - strona domowa
         </h1>
       </header>
       <section class="about">
-        <div class="about_box">
-          co ten froontend
+        <div class="about__box">
+          co ten frontend
         </div>
-        <img src="obrazek.jpg" alt="jakistamobrazek" class="about_img" />
+        <img src="obrazek.jpg" alt="jakistamobrazek" class="about_img">
         <h2 class="about_header">Kim jestem?</h2>
-        <p class="about_paragraph about_paragraph--js">
+        <p class="about__paragraph about__paragraph--js">
           tego nie widać bo sie schowało po JS
-          <br />
+          <br>
           <a href="#pamietniczek">Przejdz do pamiętniczka</a>
         </p>
       </section>
 
       <section class="dairy" id="pamietniczek">
-        <h2 class="dairy_header">Pamiętniczek Rafała</h2>
+        <h2 class="dairy__header">Pamiętniczek Rafała</h2>
         <section>
-          <h3 class="dairy_event">Jak swtorzyć prawidłowego HTML-a?</h3>
-          <p class="dairy_paragraph">
+          <h3 class="dairy__event">Jak swtorzyć prawidłowego HTML-a?</h3>
+          <p class="dairy__paragraph">
             To jest trudna sprawa z <em> tym htmlem</em>. Co tu sie wyczynia to
             sie w body nie mieści.
-            <br />
+            <br>
             <a href="podstrona.html">Przejdz do artykułu o pisaniu html</a>
           </p>
         </section>
         <section>
-          <h3 class="dairy_event">Poniedziałek: Czy każdego dnia można nauczyć sie czegoś nowego?</h3>
-          <br />
-          <p class="dairy_paragraph">Tyle się dzieje, ze zacząłem od zadania domowego i zwalidowania walidatorem.o</p>
+          <h3 class="dairy__event">Poniedziałek: Czy każdego dnia można nauczyć sie czegoś nowego?</h3>
+          <br>
+          <p class="dairy__paragraph">Tyle się dzieje, ze zacząłem od zadania domowego i zwalidowania walidatorem.o</p>
           <a href="poniedzialek.html">Poniedziałek</a>
         </section>
         <section>
-          <h3 class="dairy_event">Wtorek: Kanbanem to i tamto</h3>
-          <br />
-          <p class="dairy_paragraph">Kolejnego dnia przyszedł czas na Kanban, tak powstał pierwszy projekt w trello</p>
+          <h3 class="dairy__event">Wtorek: Kanbanem to i tamto</h3>
+          <br>
+          <p class="dairy__paragraph">Kolejnego dnia przyszedł czas na Kanban, tak powstał pierwszy projekt w trello</p>
           <a href="wtorek.html">Wtorek</a>
         </section>
         <section>
-          <h3 class="dairy_event">Środa: Znaczników wiecej i wiecej?</h3>
-          <br />
-          <p class="dairy_paragraph">Znaczniki, jeszcze więcej znaczników</p>
+          <h3 class="dairy__event">Środa: Znaczników wiecej i wiecej?</h3>
+          <br>
+          <p class="dairy__paragraph">Znaczniki, jeszcze więcej znaczników</p>
           <a href="sroda.html">Środa</a>
         </section>
         <section>
-          <h3 class="dairy_event">Czwartek: Style, wszedzie widze style?</h3>
-          <br />
-          <p class="dairy_paragraph">Zagnieżdzać czy nie zagnieżdzać? Tylko bez !impoortant proszę.</p>
+          <h3 class="dairy__event">Czwartek: Style, wszedzie widze style?</h3>
+          <br>
+          <p class="dairy__paragraph">Zagnieżdzać czy nie zagnieżdzać? Tylko bez !impoortant proszę.</p>
           <a href="czwartek.html">Czwartek</a>
         </section>
         <section>
-          <h3 class="dairy_event">Piątek: co ta przeglądarka znów odwyczynia??</h3>
-          <br />
-          <p class="dairy_paragraph">Zrenderuje czy nie zrendaruje? a bedzie czerwony czy czarny?</p>
+          <h3 class="dairy__event">Piątek: co ta przeglądarka znów odwyczynia??</h3>
+          <br>
+          <p class="dairy__paragraph">Zrenderuje czy nie zrendaruje? a bedzie czerwony czy czarny?</p>
           <a href="piatek.html">Piątek</a>
         </section>
         <section>
-          <h3 class="dairy_event">Sobota: jak sie nie da jak sie mozna javemscriptem??</h3>
-          <br />
-          <p class="dairy_paragraph">JS dla każdego!</p>
+          <h3 class="dairy__event">Sobota: jak sie nie da jak sie mozna javemscriptem??</h3>
+          <br>
+          <p class="dairy__paragraph">JS dla każdego!</p>
           <a href="sobota.html">Sobota</a>
         </section>
         <section>
-          <h3 class="dairy_event">Niedziela. A w niedziele frontendowiec odpoczywał czy tam terminalował?</h3>
-          <br />
-          <p class="dairy_paragraph">Terminalem rozwiązać zagadke</p>
+          <h3 class="dairy__event">Niedziela. A w niedziele frontendowiec odpoczywał czy tam terminalował?</h3>
+          <br>
+          <p class="dairy__paragraph">Terminalem rozwiązać zagadke</p>
           <a href="niedziela.html">Niedziela</a>
         </section>
       </section>
@@ -98,7 +99,7 @@
       Strona domowa Rafała Lisewskiego, wszystkie elementy powstały w trakcie
       szkolenia WTF: Cotenfrontend
     </footer>
-    <script src="main.js"> 
+    <script defer src="main.js">
     </script>
   </body>
 </html>
