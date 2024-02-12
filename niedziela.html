@@ -4,10 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Niedziela</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="normalize.css" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <header class="navigation">
+  <header>
+    <nav class="navigation">
       <a class="navigation__link" href="index.html">Strona główna</a>
       <a class="navigation__link" href="podstrona.html">Podstrona</a>
       <a class="navigation__link" href="poniedzialek.html">Poniedziałek</a>
@@ -17,17 +19,18 @@
       <a class="navigation__link" href="piatek.html">Piątek</a>
       <a class="navigation__link" href="sobota.html">Sobota</a>
       <a class="navigation__link" href="niedziela.html">Niedziela</a>
-    </header>
+    </nav>
+  </header>
   <main class="main">
     <article class="article">
       <header>
         <h1 class="article__title">A w neidziele frontendowiec odpoczywał czy tam terminalował?</h1>
       </header>
       <p class="article__paragraph">
-        <img src="terminal.jpeg" alt="terminalem" />
+        <img src="terminal.jpeg" alt="terminalem" class="article__paragraph__img">
       </p>
       <footer>
-        <img src="obrazek.jpg" alt="Obudowa 2u"/>
+        <img src="obrazek.jpg" alt="Obudowa 2u" class="footer_img">
         Autor: Rafał Lisewski
       </footer>
     </article>
@@ -35,8 +38,10 @@
     <a class="link" href="index.html">Powrót do strony głownej</a>
   </main>
   <footer>
-    Strona domowa Rafała Lisewskiego, wszystkie elementy powstały w trakcie
-    szkolenia WTF: Cotenfrontend
+      <p class="footer__content">
+        Strona domowa Rafała Lisewskiego, wszystkie elementy powstały w trakcie
+        szkolenia <br>WTF: Cotenfrontend
+      </p>
   </footer>
   <script src="main.js"> 
   </script>
