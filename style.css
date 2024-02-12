@@ -10,6 +10,62 @@ body {
   background: #bfc3ba ;
 }
 
+.about {
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+
+.about__header {
+  color: #1460aa;
+}
+
+.about__img {
+  width: 100%;
+  max-width: 200px;
+  display: block;
+  float: left;
+  margin: 0 16px 16px 0;
+}
+
+.about__paragraph {
+  color: #37323e;
+  padding: 10px 16px;
+}
+
+.article {
+
+}
+
+.article__header {
+  color: #536271;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.article__footer__img {
+  width: 100%;
+  max-width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.article__paragraph {
+  color: #37323e;
+  padding: 10px 16px;
+}
+
+.article__paragraph__img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+}
+
+.article__title {
+  color: #8c7051;
+}
+
 .dairy {
   clear: both;
 }
@@ -27,52 +83,28 @@ body {
   color: green;
 }
 
-.article__title {
-  color: #8c7051;
-}
-
-.about {
-  /* position: relative; */
-  /* overflow: hidden; */
-}
-
-.about__header {
-  color: #1460aa;
-}
-
-.about__paragraph {
-  color: #37323e;
-  padding: 10px 16px;
-}
-
-.about__box{
-  width: 100px;
-  height: 100px;
-  background: yellowgreen;
-  border: 10px solid red;
-  margin: 10px;
-  position: sticky;
-  top: 0;
-
-}
-
-
-
-.about__img {
+.footer {
   width: 100%;
-  max-width: 200px;
-  display: block;
-  float: left;
-  margin: 0 16px 16px 0;
+  max-width: 700px;
+  margin: 32px auto;
+  clear: both;
 }
 
-.article {
-
+.footer__content {
+  color: #2f2235;
+  text-align: center;
+  padding-top: 16px;
 }
 
-.article__paragraph {
-  color: #37323e;
-  padding: 10px 16px;
+.footer__top--link {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #1460aa;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 
 .main {
@@ -85,13 +117,6 @@ body {
   color: #2f2235;
   text-align: center;
   padding-top: 16px;
-}
-
-.top {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  text-decoration: none;
 }
 
 .navigation {
@@ -111,10 +136,4 @@ body {
 
 .navigation__link {
   color: #47682c;
-}
-
-.footer {
-  width: 100%;
-  max-width: 700px;
-  margin: 0px auto;
 }
