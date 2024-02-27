@@ -27,4 +27,13 @@ function createContent(querySelector,content) {
     element.innerHTML = content;
 }
 createContent('.about__paragraph--js','Co tu sie wyczynia teraz?');
-// 14323372
+
+const helloName = (age, firstName) => {
+  greet = (`Nazywam się ${firstName} i mam ${age} lat.`);
+  return greet;
+}
+
+const greetV2 = (age, firstName) => `Nazywam się ${firstName} i mam ${age} lat.`;
+
+console.log(helloName(age, firstName));
+console.log(greetV2(age, firstName));
