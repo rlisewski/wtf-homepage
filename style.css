@@ -124,24 +124,36 @@ body {
 
 .navigation {
   position: fixed;
-  top: 1rem;
-  left: 10vw;
+  top: 0.5rem;
   right: 10vw;
   padding: 1rem;
   background: #f4f4f4;
   border-radius: 25px;
-  z-index: 100;
-  display: flex;
   display: none;
+}
+
+.navigation__button {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  color: #fff;
+  border: none;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.navigation__menu--visible {
+  display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-end;
   align-items: center;
   row-gap: 1rem;
+
 }
 
 .navigation--header {
-  color: #2f2235;
 }
 
 .navigation__link {
@@ -164,6 +176,10 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+  }
+
+  .navigation__button {
+    display: none;
   }
 
   .navigation--header {
