@@ -10,7 +10,8 @@
   </head>
   <body>
     <header class="navigation--header">
-      <nav class="navigation">
+      <button class="navigation__button navigation__button--js" aria-label="przełącznik menu"></button>
+      <nav class="navigation navigation--js">
         <a class="navigation__link" href="index.html">Strona główna</a>
         <a class="navigation__link" href="podstrona.html">Podstrona</a>
         <a class="navigation__link" href="poniedzialek.html">Poniedziałek</a>
@@ -37,9 +38,9 @@
           <a href="#pamietniczek">Przejdz do pamiętniczka</a>
         </p>
       </section>
+      <h2 class="dairy__header">Pamiętniczek Rafała</h2>
 
       <section class="dairy" id="pamietniczek">
-        <h2 class="dairy__header">Pamiętniczek Rafała</h2>
         <section>
           <h3 class="dairy__event">Jak swtorzyć prawidłowego HTML-a?</h3>
           <p class="dairy__paragraph">
@@ -101,6 +102,8 @@
       </p>
     </footer>
     <script defer src="main.js">
+    </script>
+    <script defer src="actions.js">
     </script>
   </body>
 </html>
