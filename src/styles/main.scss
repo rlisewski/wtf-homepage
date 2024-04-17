@@ -6,6 +6,9 @@ $dotColor: #47682c;
 $defaultSize: 1rem;
 $defaultGap: 1rem;
 
+$tablet: 768px;
+$desktop: 1024px;
+
 @mixin defaultSize {
     width: 100%;
     margin: 0 auto;
@@ -119,12 +122,12 @@ body {
     color: green;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
     column-gap: $defaultGap;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -162,7 +165,7 @@ body {
     text-align: center;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin: $defaultGap auto;
     max-width: 65vw;
 
@@ -206,7 +209,7 @@ body {
     color: #47682c;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     left: 15vw;
     right: 15vw;
     display: flex;
