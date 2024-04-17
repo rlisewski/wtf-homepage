@@ -1,0 +1,229 @@
+$articleColor: #536271;
+$paragraphColor: #37323e;
+$footerColor: #2f2235;
+$dotColor: #47682c;
+
+$defaultSize: 1rem;
+$defaultGap: 1rem;
+
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin defaultSize {
+    width: 100%;
+    margin: 0 auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #bfc3ba ;
+  min-height: 100vh;
+  background-color: rgba(142, 114, 208, 1);
+  background-image: linear-gradient(180deg, rgba(142, 114, 208, 1) 33%, rgba(149, 173, 168, 1) 100%);
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  padding: $defaultGap;
+}
+
+.about {
+
+  &__header {
+    color: #1460aa;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 200px;
+    display: block;
+    float: left;
+    margin: 0 16px 16px 0;
+  }
+
+  &__paragraph {
+    color: $paragraphColor;
+    padding: 10px 16px;
+  }
+}
+
+
+.article {
+  &__header {
+    color: $articleColor;
+    @include defaultSize;
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  &__defaultSizeter__img {
+    @include defaultSize;
+    max-width: 50px;
+    display: block;
+  }
+
+  &__paragraph {
+    color: $paragraphColor;
+    padding: 10px 16px;
+    &__img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+    }
+  }
+  &__title {
+    color: #8c7051;
+  }
+}
+
+.dairy {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &__box {
+    background: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  
+    &::before {
+      content: "";
+      border-radius: 100%;
+      background-color: $dotColor;
+      padding: 10px auto;
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
+
+    &::after {
+      content: "📌";
+      padding-right: 10px;
+    }
+  }
+
+  &__header {
+    color: $articleColor;
+    text-align: center;
+  }
+
+  &__paragraph {
+    color: $paragraphColor;
+    padding: 10px 16px;
+  }
+
+  &__event {
+    color: green;
+  }
+
+  @media screen and (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: $defaultGap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.footer {
+  width: 100%;
+  max-width: 700px;
+  margin: 32px auto;
+  clear: both;
+
+  &__content {
+    color: $footerColor;
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  &__top--link {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #1460aa;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
+
+.main {
+  width: 100%;
+  max-width: 700px;
+  
+  &__header {
+    color: $footerColor;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: $defaultGap auto;
+    max-width: 65vw;
+
+    &__header {
+      padding-top: $defaultGap;
+    }
+  }
+ }
+
+.navigation {
+  position: fixed;
+  top: 0.5rem;
+  right: 10vw;
+  padding: $defaultGap;
+  background: #f4f4f4;
+  border-radius: 25px;
+  display: none;
+
+  &__button {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    color: #fff;
+    border: none;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  &__menu--visible {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    row-gap: $defaultGap;
+
+  }
+
+  &__link {
+    color: #47682c;
+  }
+
+  @media screen and (min-width: $tablet) {
+    left: 15vw;
+    right: 15vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  
+    &__button {
+      display: none;
+    }
+
+    &--header {
+      padding-top: $defaultGap;
+    }
+
+  }
+}

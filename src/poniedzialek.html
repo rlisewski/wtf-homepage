@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wtorek</title>
-  <link href="normalize.css" rel="stylesheet" type="text/css">
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Poniedziałek</title>
+  <link href="styles/normalize.css" rel="stylesheet" type="text/css">
+  <link href="styles/main.scss" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <header>
-    <nav class="navigation">
+  <header class="navigation--header">
+    <button class="navigation__button navigation__button--js" aria-label="przełącznik menu"></button>
+    <nav class="navigation navigation--js">
       <a class="navigation__link" href="index.html">Strona główna</a>
       <a class="navigation__link" href="podstrona.html">Podstrona</a>
       <a class="navigation__link" href="poniedzialek.html">Poniedziałek</a>
@@ -23,19 +24,20 @@
   </header>
   <main class="main">
     <article class="article">
-      <header>
-        <h1 class="article__title">To może trello?</h1>
+      <header class="article_header">
+        <h1 class="article__title">Co wydarzyło się w poniedziałek</h1>
       </header>
-      <h2>Takie rzeczy tylko w trello</h2>
       <p class="article__paragraph">
-        Profil gotowy, mozna trellowac
+        Zadanie domowe nie było trudne. W wyniku prac powstał standardowy plik html, który następnie został zwalidowany przez walidator.
+        <img src="validator.png" alt="Validator ok" class="article_paragraph__img">
       </p>
-      <img src="trello-fake.jpeg" alt="Trello srelo" class="article__paragraph__img">
+      <br/>
       <footer>
         <img src="obrazek.jpg" alt="Obudowa 2u" class="article__footer__img">
         Autor: Rafał Lisewski
       </footer>
     </article>
+
     <a class="link" href="index.html">Powrót do strony głownej</a>
   </main>
   <footer>
@@ -45,6 +47,8 @@
       </p>
   </footer>
   <script src="main.js"> 
+  </script>
+  <script defer src="actions.js">
   </script>
 </body>
 </html>
