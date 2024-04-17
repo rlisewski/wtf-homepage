@@ -1,3 +1,16 @@
+$articleColor: #536271;
+$paragraphColor: #37323e;
+$footerColor: #2f2235;
+$dotColor: #47682c;
+
+$defaultSize: 1rem;
+$defaultGap: 1rem;
+
+@mixin defaultSize {
+    width: 100%;
+    margin: 0 auto;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -13,7 +26,8 @@ body {
   background-image: linear-gradient(180deg, rgba(142, 114, 208, 1) 33%, rgba(149, 173, 168, 1) 100%);
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 1rem;
+  font-size: 24px;
+  padding: $defaultGap;
 }
 
 .about {
@@ -31,7 +45,7 @@ body {
   }
 
   &__paragraph {
-    color: #37323e;
+    color: $paragraphColor;
     padding: 10px 16px;
   }
 }
@@ -39,22 +53,20 @@ body {
 
 .article {
   &__header {
-    color: #536271;
-    width: 100%;
-    margin: 0 auto;
+    color: $articleColor;
+    @include defaultSize;
     text-align: center;
     padding-top: 16px;
   }
 
-  &__footer__img {
-    width: 100%;
+  &__defaultSizeter__img {
+    @include defaultSize;
     max-width: 50px;
     display: block;
-    margin: 0 auto;
   }
 
   &__paragraph {
-    color: #37323e;
+    color: $paragraphColor;
     padding: 10px 16px;
     &__img {
       width: 100%;
@@ -71,13 +83,35 @@ body {
   display: grid;
   grid-template-columns: 1fr;
 
+  &__box {
+    background: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  &__box::before {
+    content: "";
+    border-radius: 100%;
+    background-color: $dotColor;
+    padding: 10px auto;
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__box::after {
+    content: "📌";
+    padding-right: 10px;
+  }
+
   &__header {
-    color: #536271;
+    color: $articleColor;
     text-align: center;
   }
 
   &__paragraph {
-    color: #37323e;
+    color: $paragraphColor;
     padding: 10px 16px;
   }
 
@@ -87,7 +121,11 @@ body {
 
   @media screen and (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
+    column-gap: $defaultGap;
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -98,7 +136,7 @@ body {
   clear: both;
 
   &__content {
-    color: #2f2235;
+    color: $footerColor;
     text-align: center;
     padding-top: 16px;
   }
@@ -120,15 +158,16 @@ body {
   max-width: 700px;
   
   &__header {
-    color: #2f2235;
+    color: $footerColor;
     text-align: center;
   }
 
   @media screen and (min-width: 768px) {
-    margin: 1rem auto;
-  
+    margin: $defaultGap auto;
+    max-width: 65vw;
+
     &__header {
-      padding-top: 1rem;
+      padding-top: $defaultGap;
     }
   }
  }
@@ -137,7 +176,7 @@ body {
   position: fixed;
   top: 0.5rem;
   right: 10vw;
-  padding: 1rem;
+  padding: $defaultGap;
   background: #f4f4f4;
   border-radius: 25px;
   display: none;
@@ -159,7 +198,7 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-end;
     align-items: center;
-    row-gap: 1rem;
+    row-gap: $defaultGap;
 
   }
 
@@ -168,8 +207,8 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    left: 5vw;
-    right: 5vw;
+    left: 15vw;
+    right: 15vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -180,7 +219,7 @@ body {
     }
 
     &--header {
-      padding-top: 1rem;
+      padding-top: $defaultGap;
     }
 
   }
