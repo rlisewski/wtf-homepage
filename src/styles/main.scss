@@ -88,21 +88,21 @@ body {
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
-  }
+  
+    &::before {
+      content: "";
+      border-radius: 100%;
+      background-color: $dotColor;
+      padding: 10px auto;
+      display: block;
+      width: 20px;
+      height: 20px;
+    }
 
-  &__box::before {
-    content: "";
-    border-radius: 100%;
-    background-color: $dotColor;
-    padding: 10px auto;
-    display: block;
-    width: 20px;
-    height: 20px;
-  }
-
-  &__box::after {
-    content: "📌";
-    padding-right: 10px;
+    &::after {
+      content: "📌";
+      padding-right: 10px;
+    }
   }
 
   &__header {
